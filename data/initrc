@@ -1,0 +1,4 @@
+# Leopard 默认服务
+/system/leopard/leopard-mountd.elf
+respawn /apps/system/leopard-ime.elf
+respawn /apps/leopard/leopard-getty.elf

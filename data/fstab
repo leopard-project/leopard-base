@@ -1,0 +1,4 @@
+# Leopard fstab：<device> <mountpoint> [fstype]
+# 例：把第二个分区挂到 /apps（把 apps 当 /usr 用）
+# /dev/sda2 /apps vfat
+# /dev/sda3 /users vfat
