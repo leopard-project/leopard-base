@@ -37,7 +37,7 @@ def main():
     cmd = "rm -rf .pkg"
     for src, dst in files:
         cmd += f" && mkdir -p .pkg/$$(dirname {dst}) && cp {src} .pkg/{dst}"
-    cmd += f" && cd out && xbps-create {args} ../.pkg"
+    cmd += f" && cd out && xbps-create --compression gzip {args} ../.pkg"
 
     L = ["# leopard-base 数据包（无二进制，只有配置文件）", "ninja_required_version = 1.10"]
     L += ["rule package", f"  command = {cmd}", ""]
