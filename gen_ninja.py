@@ -14,10 +14,10 @@ PKG = {
     "desc":    "Leopard base system",
     "deps":    "",
     "data": [
-        ("data/initrc",  "system/etc/leopard/initrc"),
-        ("data/paths",   "system/etc/leopard/paths"),
-        ("data/profile", "system/etc/leopard/profile"),
-        ("data/fstab",   "system/etc/leopard/fstab"),
+        ("data/initrc",  "system/config/initrc"),
+        ("data/paths",   "config/paths"),
+        ("data/profile", "config/profile"),
+        ("data/fstab",   "system/config/fstab"),
     ],
 }
 
