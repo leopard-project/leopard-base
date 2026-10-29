@@ -1,4 +1,6 @@
 # Leopard fstab：<device> <mountpoint> [fstype]
-# 例：把第二个分区挂到 /apps（把 apps 当 /usr 用）
-# /dev/sda2 /apps vfat
-# /dev/sda3 /users vfat
+# 注意：fstype 必须写 fatfs（内核按名字精确匹配 "fatfs"）
+# 安装程序（leopard-installer）会在装完后用三分区实测值覆盖本文件；
+# 下面是手工维护时的例子：
+# /dev/sata0p1 /apps fatfs
+# /dev/sata0p2 /users fatfs
