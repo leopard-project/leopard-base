@@ -9,7 +9,7 @@ OUT  = ROOT / "out"
 # 纯数据包：只有 data 文件，无 install 二进制
 PKG = {
     "pkgname": "leopard-base",
-    "pkgver":  "1.0_1",
+    "pkgver":  "1.0.1_1",
     "arch":    "x86_64",
     "desc":    "Leopard base system",
     "deps":    "",
