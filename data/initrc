@@ -1,3 +1,5 @@
 # Leopard 默认服务
 /system/leopard/leopard-mountd.elf
-respawn /apps/leopard/leopard-getty.elf
+# conhost owns the console/VT and starts getty on its PTY.  getty logs in and
+# execs the user shell in the same session.
+respawn /apps/leopard/leopard-conhost.elf
